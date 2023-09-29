@@ -2,13 +2,9 @@ body{
     font-family: sans-serif;
     margin:0;
     color: rgb(179, 179, 179);
-    background: #000000;
-}
-
-main{
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #353535, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #353535, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #4b4b4b, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4b4b4b, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header{
@@ -28,6 +24,10 @@ nav a{
     margin-right:10%;
 }
 
+.img-back{
+    margin: 0;
+}
+
 .png-logo{
     width:60%;
     height:80%;
@@ -40,44 +40,15 @@ nav a{
     color:rgb(208, 208, 208);
 }
 
-
-
 .nav-link:hover{
     background-color: #083925;
     color:white;
 }
 
-
 .titulos{
     margin:1%;
     text-align:center;
 }
-
-.cancha1{
-    display:flex;
-    flex-direction: row;
-}
-
-.cancha1 img{
-    width: 50%;
-    align-items: center;
-}
-
-.titulo-cancha{
-    margin-bottom: 1%;
-}
-
-.texto-cancha1{
-    margin: 1%;
-    margin-top:3%;
-}
-
-.cancha1-total,.cancha2-total{
-    width: 50%;
-    display:flex;
-    flex-direction: column;
-}
-
 
 .site-footer{
     margin-top: 3%;
@@ -93,38 +64,18 @@ nav a{
     font-size:smaller;
 }
 
-.cancha2{
-    margin-top:3%;
-    display:flex;
-    flex-direction: row;
-}
-
-.texto-cancha2{
-    margin: 1%;
-    width: 60%;
-}
-
-.cancha2 img{
-    width:50%;
-}
-.fotos{
-    display:flex;
-    flex-direction:row;
-}
-
 .background{
     width: 100%;
     height: 35vw;
 }
 
-.cancha-luz{
-    width:200%;
+.card{
+    margin: 0 45px;
 }
 
-.titulo-h3{
-    text-decoration: underline;
+.card-img-top{
+    height: 500px;
 }
-
 @media(max-width:800px){
     
     nav{
