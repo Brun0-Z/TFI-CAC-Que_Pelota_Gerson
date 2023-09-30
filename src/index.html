@@ -57,7 +57,7 @@
     <nav class="barNav">
       <a href="#" class="nav-link text-uppercase fw-bold">inicio</a>
       <a href="#" class="nav-link text-uppercase fw-bold">sobre nosotros</a>
-      <a href="#" class="nav-link text-uppercase fw-bold">reserva</a>
+      <a href="#reserva" class="nav-link text-uppercase fw-bold">reserva</a>
       <a href="#contacto y ubicacion" class="nav-link text-uppercase fw-bold">contacto y ubicacion</a>
     </nav>
   </header>
@@ -94,6 +94,83 @@
         </div>
       </section>
 
+
+      <section id="reserva" allign="center">
+        <h1 text x="10" y="50" font-family="monospace" font-size="24">RESERVA</h1>
+        <h3> Reservá con nosotros en las mejores canchas para disfrutar con tus amigos </h3>
+        <h5> Elegí entre nuestras canchas de fútbol 5 o 7 y hace tu reserva por teléfono al 4455-4342/4343 o vía  <a class="png-logo" href="https://www.whatsapp.com/?lang=es_LA">whatsapp,</a> o completando el siguiente formulario </h5>
+        
+      
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <h1>Nuestras canchas</h1>
+          <p> Elegí entre nuestras canchas de fútbol 5 o 7 y hace tu reserva por teléfono al 4455-4342/4343 o vía  <a class="png-logo" href="https://www.whatsapp.com/?lang=es_LA">whatsapp, </a>o completando el siguiente formulario </p>
+          <div class="Maradona" allign="left">
+            <p>Maradona 7</p>
+            <img class="jpeg" src="..\img\futbol7-1.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+          </div>
+          <div class="Pele" allign="right"> 
+            <p>Pele 5</p>
+            <img class="jpeg" src="..\img\futbol5-1.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+          </div>
+          <div class="Messi"> 
+            <p>Messi 7</p>
+            <img class="jpeg" src="..\img\futbol7-2.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+          </div>
+          <div class="Di Stefano" allign="right"> 
+            <p>Di Stefano 5</p>
+            <img class="jpeg" src="..\img\futbol5-2.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+          </div>
+        </div>
+        </div>
+        <button onclick="togglePopup()">Nuestras Canchas</button>
+
+        <form action="/reserva/completa.html">
+          <fieldset>
+            <h3>Fecha</h3>
+            <input type="date" name="fechareserva">
+            <br/><br/>
+
+            <h3>Hora</h3>
+              <label for="hora">Elegí tu hora de reserva:</label>
+
+              <input type="time" id="hora" name="hora" min="09:00" max="23:00" required step="1800"/>
+              
+              <p><small>Horarios de reserva de 9 a 23 hs</small></p>
+
+
+            <h3>Cancha</h3>
+            <p><input type="radio" name="cancha" value="1"> Maradona</p>
+            <p><input type="radio" name="cancha" value="2"> Pele</p>
+            <p></p><input type="radio" name="cancha" value="3"> Messi<p>
+            <p></p><input type="radio" name="cancha" value="4"> Di Stefano<p>
+
+            <p><input type="submit" value="Enviar"></p>
+          </fieldset>
+        </form>
+
+        <div class="Maradona" allign="left">
+          <p>Maradona 7</p>
+          <img class="jpeg" src="..\img\futbol7-1.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+        </div>
+        <div class="Pele" allign="right"> 
+          <p>Pele 5</p>
+          <img class="jpeg" src="..\img\futbol5-1.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+        </div>
+        <div class="Messi"> 
+          <p>Messi 7</p>
+          <img class="jpeg" src="..\img\futbol7-2.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+        </div>
+        <div class="Di Stefano" allign="right"> 
+          <p>Di Stefano 5</p>
+          <img class="jpeg" src="..\img\futbol5-2.jpg" ;background-repeat="no-repeat" ; height="450px" width="50%">
+        </div>
+      </section>
+
+
+      
 
       <section id="contacto y ubicacion" align="center">
         <h1 text x="10" y="50" font-family="monospace" font-size="24">CONTACTO</h1>
