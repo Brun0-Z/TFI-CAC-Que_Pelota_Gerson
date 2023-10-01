@@ -16,57 +16,45 @@
     <title>Que pelota Gerson</title>
   </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../styles/normalize.css">
-  <link rel="stylesheet" href="../styles/index.css" />
-  <link rel="icon" href="../img/logoPag.png" type="image/x-icon" />
-  <title>Que pelota Gerson</title>
-</head>
-
   <body>
     <header>
       <div class="logo">
-        <a href="#" rel="noopener noreferrer"
-          ><img
+        <a href="#" rel="noopener noreferrer">
+          <img
             class="png-logo"
             src="../img/VERDE BENDITO.png"
             alt="logo futbol 5"
           />
         </a>
       </div>
-      <nav class="barNav">
-        <a href="#" class="nav-link text-uppercase fw-bold">inicio</a>
+      <nav class="barNav navbar navbar-fixed-top">
+        <a href="#titulos" class="nav-link text-uppercase fw-bold">EL COMPLEJO</a>
         <a href="#" class="nav-link text-uppercase fw-bold">sobre nosotros</a>
         <a href="#" class="nav-link text-uppercase fw-bold">reserva</a>
-        <a href="contactos.html" class="nav-link text-uppercase fw-bold"
-          >contacto</a
-        >
+        <a href="#contact" class="nav-link text-uppercase fw-bold">contacto</a>
       </nav>
+      <div class="redes">
+        <a class="png-logo" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+          <img src="..\img\whatsapp.png"
+            height="36px" width="36px" />
+        </a>
+        <a class="png-logo" href="https://www.instagram.com/" target="_blank">
+          <img src="..\img\instagram.png" 
+          height="36px" width="36px"/>
+        </a>
+        <a class="png-logo" href="https://www.facebook.com/?ref=logo" target="_blank">
+          <img src="..\img\facebook.png" 
+          height="36px" width="36px" />
+        </a>
+        
+      </div>
     </header>
-<body>
-  <header>
-    <div class="logo">
-      <a href="#" rel="noopener noreferrer"><img class="png-logo" src="../img/VERDE BENDITO.png" alt="logo futbol 5" />
-      </a>
-    </div>
-    <nav class="barNav">
-      <a href="#" class="nav-link text-uppercase fw-bold">inicio</a>
-      <a href="#" class="nav-link text-uppercase fw-bold">sobre nosotros</a>
-      <a href="#reserva" class="nav-link text-uppercase fw-bold">reserva</a>
-      <a href="#contacto y ubicacion" class="nav-link text-uppercase fw-bold">contacto y ubicacion</a>
-    </nav>
-  </header>
 
     <main>
-      <section>
+      <section id="inicio">
         <div class="imgback">
           <img
-            class="img-fluid background"
+            class="img-fluid"
             src="../img/backgroundgerson.png"
             alt=""
           />
@@ -83,16 +71,47 @@
         </h5>
       </section>
 
-      <section>
-        <div class="card">
-          <img src="../img/cancha-futbol-5-autorizada-cuarentena.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      <section id="cartas">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
 
       <section id="reserva" allign="center">
@@ -172,62 +191,106 @@
 
       
 
-      <section id="contacto y ubicacion" align="center">
-        <h1 text x="10" y="50" font-family="monospace" font-size="24">CONTACTO</h1>
+     
+
+      <section id="contact">
+        <h1 text x="10" y="50" font-family="monospace" font-size="24">
+          CONTACTO
+        </h1>
+
         <form>
           <p>
-            <input type="text" name="nombre" placeholder="Nombre" size="40" required>
-            <input type="text" name="apellido" placeholder="Apellido" size="40" required>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              size="40"
+              required
+            />
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Apellido"
+              size="40"
+              required
+            />
+          </p>
+
           <p>
-            <input type="text" name="Email" placeholder="Email" size="40" required>
-            <input type="text" name="telefono" placeholder="Telefono" size="40" required>
+            <input
+              type="text"
+              name="Email"
+              placeholder="Email"
+              size="40"
+              required
+            />
+            <input
+              type="text"
+              name="telefono"
+              placeholder="Telefono"
+              size="40"
+              required
+            />
+          </p>
+
           <p>
-            <input type="text" name="texto" placeholder="Asunto" size="40" required>
-          <p><textarea name="Mensaje" rows="4" cols="40" placeholder="Su Mensaje"></textarea>
+            <input
+              type="text"
+              name="texto"
+              placeholder="Asunto"
+              size="40"
+              required
+            />
+          </p>
+
           <p>
-            <input type="submit" value="Enviar">
+            <textarea
+              name="Mensaje"
+              rows="4"
+              cols="40"
+              placeholder="Su Mensaje"
+            ></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Enviar" />
           </p>
         </form>
       </section>
-      <section align="center">
-        <div class=" WhatsApp">
-          <a class="png-logo" href="https://www.whatsapp.com/?lang=es_LA"><img src="..\img\whatsapp.png" height="48px"
-              width="48px" ; class="Instagram"><a class="png-logo" href="https://www.instagram.com/"><img
-                src="..\img\instagram.png" height="48px" width="48px" ; class="Instagram" ; class="Facebook"
-                class="png-logo" href="https://www.facebook.com/?ref=logo"><img src="..\img\facebook.png" height="48px"
-                width="48px" ; class="LinkedIn" ;class="LinkedIn"><a class="png-logo" href="https://ar.linkedin.com/"><img
-                  src="..\img\linkedin.png" height="48px" width="48px">
-              </a>
-        </div>
-      </section>
-      <section align="center">
-        <h1>NUESTRAS REDES</h1>
+
+      <section id="ubication">
+        <h2>NUESTRA UBICACION</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.46829670371227!2d-60.650222904320785!3d-32.95770498929494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0d1315e9e1%3A0x1f3089776b595669!2sEspa%C3%B1a%201864%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1695766953215!5m2!1ses-419!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
         </iframe>
-        <h2>NUESTRA UBICACION</h2>
       </section>
-      <div>
-        <img class="jpeg" src="..\img\Imagencontactos1.jpg" ;background-repeat="no-repeat" ; height="450px" width="100%">
-      </div>
     </main>
 
-  <footer class="site-footer">
-    <div id="footer-content">
-      <p class="footer-text">Copyright 2023 @ Domain - All Rights Reserved - CAC GRUPO PENDIENTE</p>
-    </div>
-  </footer>
+    <footer class="site-footer">
+      <div id="footer-content">
+        <p class="footer-text">
+          Copyright 2023 @ Domain - All Rights Reserved - CAC GRUPO PENDIENTE
+        </p>
+      </div>
+    </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- Popper.js first, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
