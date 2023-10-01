@@ -3,20 +3,26 @@ body{
     margin:0;
     color: rgb(179, 179, 179);
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #4b4b4b, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #4b4b4b, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
 header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     display: flex;
     background-color: #4c982c;
     align-items: center;
+    z-index: 100;
+    margin-bottom:10px;
 }
 
 nav{
     display:flex;
-    width:100%;
-    height:100%;
+    width:100%; 
 }
 
 nav a{
@@ -24,18 +30,11 @@ nav a{
     margin-right:10%;
 }
 
-.img-back{
-    margin: 0;
-}
-
 .png-logo{
     width:60%;
-    height:80%;
 }
 
-.barNav{
-    height:100%;
-}
+
 .nav-link{
     color:rgb(208, 208, 208);
 }
@@ -45,6 +44,11 @@ nav a{
     color:white;
 }
 
+.redes{
+    display:flex;
+    flex-direction: row;
+}
+
 .titulos{
     margin:1%;
     text-align:center;
@@ -52,7 +56,7 @@ nav a{
 
 .site-footer{
     margin-top: 3%;
-    background-color: #3b3b3b;
+    background-color: #2a2a2a;
 }
 
 #footer-content{
@@ -64,19 +68,50 @@ nav a{
     font-size:smaller;
 }
 
-.background{
-    width: 100%;
-    height: 35vw;
+#inicio{
+    margin-top:4%;
 }
 
+.imgback{
+    margin-top:50px;
+    height:auto;
+}
+
+.img-fluid{
+    height: 600px;
+    width:100%;
+}
+
+
 .card{
-    margin: 0 45px;
+    margin: 12px 45px;
+    
 }
 
 .card-img-top{
     height: 500px;
 }
-@media(max-width:800px){
+
+#contact{
+    text-align: center;
+}
+
+#ubication{
+    text-align: center;
+}
+
+#cartaM{
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cartaS{
+  
+}
+
+
+@media(max-width:1100px){
     
     nav{
         flex-direction: column;
@@ -94,25 +129,9 @@ nav a{
         text-align: center;
         width: 70%;
     }
-    .cancha1,.cancha2{
-        flex-direction: column;
-        text-align: center;
-    }
-    .cancha1 img,.cancha2 img{
-        width:98%;
-        margin: 1%;
-    }
-    .cancha1-total,.cancha2-total {
-        margin: 1%;
-        width:95%;   
-        
-    }
-    .cancha1-total p,.cancha2-total p{
-        text-align: justify;
-    }
     
-    .cancha2{
-        flex-direction: column-reverse;
+    #redes{
+        padding:2%;
     }
    
 }
