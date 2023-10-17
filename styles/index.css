@@ -17,7 +17,6 @@ header{
     background-color: #4c982c;
     align-items: center;
     z-index: 100;
-    margin-bottom:10px;
 }
 
 nav{
@@ -27,13 +26,21 @@ nav{
 
 nav a{
     text-align: center;
-    margin-right:10%;
+    justify-content:space-evenly;
 }
 
-.png-logo{
+.principal{
+    margin: 0 100px;
+}
+
+
+.png-logo{ 
     width:60%;
 }
 
+.redes{
+    padding:20px;
+}
 
 .nav-link{
     color:rgb(208, 208, 208);
@@ -73,7 +80,6 @@ nav a{
 }
 
 .imgback{
-    margin-top:50px;
     height:auto;
 }
 
@@ -83,41 +89,65 @@ nav a{
 }
 
 
-.card{
-    margin: 12px 45px;
+#servicios, #contact, #ubication{
+    text-align: center;
+}
+
+.separator{
+    display: flex;
+    text-align: center;
+    width:100%;
     
+    height:100px;
 }
 
-.card-img-top{
-    height: 500px;
+.bottompage{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #034515, #126934, #357a51);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #034515, #126934, #357a51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#contact{
-    text-align: center;
+/* Carrousel */
+.carrousel{
+    width: 90%;
+    max-width: 120em;
+    background-color: rgb(108, 184, 105);
 }
 
-#ubication{
-    text-align: center;
+.carrousel .grande{
+
 }
 
-#cartaM{
-display: flex;
-  justify-content: center;
-  align-items: center;
+.carrousel .img{
+
 }
 
-#cartaS{
-  
+.carrousel .puntos{
+
 }
 
+.carrousel .punto{
+
+}
+/* MODAL */
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+#modal{
+    max-width: 150ch;
+}
 
 @media(max-width:1100px){
     
     nav{
         flex-direction: column;
+        gap:10px;
     }
     nav a{
-        margin:3%;
+        justify-content: space-between;
+    }
+    .nav-link{
+        width: 100%;
     }
     .logo{
         width: 40%;
@@ -131,7 +161,7 @@ display: flex;
     }
     
     #redes{
-        padding:2%;
+        justify-content: space-between;
     }
 
 }
