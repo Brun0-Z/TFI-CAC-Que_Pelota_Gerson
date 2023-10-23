@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -208,4 +209,236 @@ iframe {
 .popup .active .content {
     transition: all ease-in-out;
     transform: translate(-50%, -50%) scale(1);
+=======
+body{
+    font-family: sans-serif;
+    margin:0;
+    color: #fbfae1;
+    background: #323232;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #64a36f, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #64a36f, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    color: #fbfae1;
+    background-color: #295f4e;
+    align-items: center;
+    z-index: 100;
+}
+
+nav{
+    display:flex;
+    width:100%; 
+}
+
+nav a{
+    text-align: center;
+    justify-content:space-evenly;
+}
+
+.principal{
+    margin: 0 100px;
+}
+
+
+.png-logo{ 
+    width:60%;
+}
+
+.redes{
+    padding:20px;
+}
+
+.nav-link{
+    color:rgb(208, 208, 208);
+}
+
+.nav-link:hover{
+    background-color: #ffe121;
+    color:#7cbd1e;
+    margin-left: 20px;
+    white-space: nowrap;
+    margin: 0;
+    cursor: pointer;
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+
+.redes{
+    display:flex;
+    flex-direction: row;
+}
+
+.titulos{
+    margin:1%;
+    text-align:center;
+}
+
+.site-footer{
+    margin-top: 3%;
+    background-color: #ffe121;
+}
+
+#footer-content{
+    color:rgb(0, 0, 0);
+}
+
+.footer-text{
+    margin-bottom:0;
+    font-size:smaller;
+}
+
+#inicio{
+    margin-top:4%;
+}
+
+.imgback{
+    height:auto;
+}
+
+.img-fluid{
+    height: 600px;
+    width:100%;
+}
+
+
+#servicios, #contact, #ubication{
+    text-align: center;
+}
+
+.separator{
+    display: flex;
+    text-align: center;
+    width:100%;
+    
+    height:100px;
+}
+
+.bottompage{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #295f4e, #6db193, #64a36f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #295f4e, #6db193, #64a36f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#sbn{
+    color: #fbfae1;
+    background: -webkit-linear-gradient(to bottom, #295f4e, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #295f4e, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Carrousel */
+.carrousel{
+    width: 90%;
+    max-width: 120em;
+    background-color: rgb(108, 184, 105);
+}
+
+.carrousel .grande{
+
+}
+
+.carrousel .img{
+
+}
+
+.carrousel .puntos{
+
+}
+
+.carrousel .punto{
+
+}
+/* MODAL */
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+#modal{
+    max-width: 150ch;
+}
+
+@media(max-width:1100px){
+    
+    nav{
+        flex-direction: column;
+        gap:10px;
+    }
+    nav a{
+        justify-content: space-between;
+    }
+    .nav-link{
+        width: 100%;
+    }
+    .logo{
+        width: 40%;
+    }
+    .logo img{
+        width:100%;
+    }
+    .barNav{
+        text-align: center;
+        width: 70%;
+    }
+    
+    #redes{
+        justify-content: space-between;
+    }
+
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,7);
+    z-index:1;
+    display: none;
+}
+
+.popup .content {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height:220px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color: #fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+}
+
+.popup .active .overlay {
+    display:block;
+}
+
+.popup .active .content {
+    transition: all ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+
 }
