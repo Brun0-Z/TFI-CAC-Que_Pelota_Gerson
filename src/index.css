@@ -30,23 +30,30 @@ nav a{
     justify-content:space-evenly;
 }
 
+.png-logo{
+    max-width: 200px;
+    height:auto;
+    margin-right: 50px;
+    z-index: 100;
+}
+
 .log{
     width: 36px;
     height: 36px;
-    margin: 2px;
 }
 
 .principal{
     margin: 0 100px;
 }
 
-
-.png-logo{ 
-    width:60%;
+.redlogo{
+    padding:14px;
 }
 
 .redes{
-    padding:20px;
+    margin-left:40px;
+    display:flex;
+    justify-content: flex-end;
 }
 
 .nav-link{
@@ -97,7 +104,7 @@ nav a{
 }
 
 .img-fluid{
-    height: 600px;
+    height: 450px;
     width:100%;
 }
 
