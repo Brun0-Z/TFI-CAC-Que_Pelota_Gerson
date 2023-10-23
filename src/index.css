@@ -1,10 +1,10 @@
 body{
     font-family: sans-serif;
     margin:0;
-    color: rgb(179, 179, 179);
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fbfae1;
+    background: #323232;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #64a36f, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #64a36f, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -14,7 +14,8 @@ header{
     left:0;
     width:100%;
     display: flex;
-    background-color: #4c982c;
+    color: #fbfae1;
+    background-color: #295f4e;
     align-items: center;
     z-index: 100;
 }
@@ -53,8 +54,14 @@ nav a{
 }
 
 .nav-link:hover{
-    background-color: #083925;
-    color:white;
+    background-color: #ffe121;
+    color:#7cbd1e;
+    margin-left: 20px;
+    white-space: nowrap;
+    margin: 0;
+    cursor: pointer;
+    transition: transform .2s;
+    transform: scale(1.5);
 }
 
 .redes{
@@ -69,11 +76,11 @@ nav a{
 
 .site-footer{
     margin-top: 3%;
-    background-color: #2a2a2a;
+    background-color: #ffe121;
 }
 
 #footer-content{
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 
 .footer-text{
@@ -109,8 +116,15 @@ nav a{
 
 .bottompage{
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #034515, #126934, #357a51);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #034515, #126934, #357a51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #295f4e, #6db193, #64a36f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #295f4e, #6db193, #64a36f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#sbn{
+    color: #fbfae1;
+    background: -webkit-linear-gradient(to bottom, #295f4e, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #295f4e, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* Carrousel */
