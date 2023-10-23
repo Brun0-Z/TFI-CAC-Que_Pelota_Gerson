@@ -29,6 +29,12 @@ nav a{
     justify-content:space-evenly;
 }
 
+.log{
+    width: 36px;
+    height: 36px;
+    margin: 2px;
+}
+
 .principal{
     margin: 0 100px;
 }
@@ -112,22 +118,50 @@ nav a{
     width: 90%;
     max-width: 120em;
     background-color: rgb(108, 184, 105);
+    
 }
 
 .carrousel .grande{
+    width:200%;
+    background-color: rgb(188, 219, 187);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
 
+    transition: all .5s ease;
+    transform: translateX(-50%);
 }
 
 .carrousel .img{
-
+    width: calc(100% / 4 - 2em);
+    min-height: 10vh;
+background-color: lime;
 }
 
 .carrousel .puntos{
-
+    width: 100%;
+    margin: 1em 1em 0;
+    padding: 1em;
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .carrousel .punto{
+    width: 2em;
+    padding:.4em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: blue;
+}
 
+.carrousel .punto.activo{
+    background-color: orange;
+    
 }
 /* MODAL */
 #modal::backdrop{
