@@ -1,3 +1,215 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(179, 179, 179);
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, #19352a, #1d5529, #0ca14f);
+    z-index: 100;
+    max-block-size: 300px;
+}
+
+.redes   {
+justify-content: center;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.barNav {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgb(208, 208, 208);
+}
+
+.nav-link:hover {
+    background-color: #083925;
+    color: white;
+}
+
+.barNav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    align-items: center;
+}
+
+.log {
+    margin: 0 10px;
+    width: 36px;
+    height: 36px;
+}
+
+/* Imagen de fondo */
+#inicio {
+    position: relative;
+    text-align: center;
+}
+
+.imgback {
+    width: 100%;
+}
+
+/* Contenido principal */
+.principal {
+    padding: 20px;
+}
+
+/* Servicios */
+#servicios h1 {
+    text-align: center;
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Reserva */
+#reserva {
+    text-align: center;
+}
+
+#btn-abrir-modal {
+    background-color: #333;
+    /* Cambia el color del botón según tu preferencia */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Formulario de reserva */
+#modal {
+    display: none;
+    /* Estilos del modal */
+}
+
+/* Separador */
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+
+/* Contacto */
+#contact h1 {
+    text-align: center;
+    align-items: center;
+    align-items: center;
+}
+
+/* Ubicación */
+#ubication h2 {
+    text-align: center;
+}
+
+#ubication h3 {
+    text-align: center;
+
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/* Sobre nosotros */
+#sbn {
+    text-align: center;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .barNav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .redes {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup .active .overlay {
+    display: block;
+}
+
+.popup .active .content {
+    transition: all ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+=======
 body{
     font-family: sans-serif;
     margin:0;
@@ -228,4 +440,5 @@ nav a{
 .popup .active .content {
     transition: all ease-in-out;
     transform:translate(-50%,-50%) scale(1);
+
 }
