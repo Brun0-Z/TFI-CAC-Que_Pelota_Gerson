@@ -166,7 +166,7 @@ nav a{
     label {
             display: block;
         }
-        textarea,
+        input:required[type="text" ],
         fieldset {
             border: 1px solid #08da2b;
             background-color: #85a07a;
