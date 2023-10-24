@@ -1,38 +1,23 @@
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+    font-family: sans-serif;
+    margin:0;
     color: rgb(179, 179, 179);
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* Header */
-header {
+
+header{
     position:fixed;
     top:0;
     left:0;
+    width:100%;
     display: flex;
+    background-color: #4c982c;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    display: flex;
-    background: linear-gradient(to right, #19352a, #1d5529, #0ca14f);
     z-index: 100;
-    max-block-size: 300px;
-}
-
-main{
-    color: #fbfae1;
-    background: -webkit-linear-gradient(to bottom, #295f4e, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #295f4e, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom:10px;
 }
 
 nav{
@@ -42,248 +27,22 @@ nav{
 
 nav a{
     text-align: center;
-    justify-content:space-evenly;
+    margin-right:10%;
 }
 
 .png-logo{
-    max-width: 200px;
-    height:auto;
-    margin-right: 50px;
-    z-index: 100;
+    width:60%;
 }
 
-.redes   {
-    justify-content: center;
-}
-
-.logo {
-    flex: 1;
-    text-align: center;
-}
-
-.barNav {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .nav-link{
     color:rgb(208, 208, 208);
 }
 
 .nav-link:hover{
-    background-color: #ffe121;
-    color:#7cbd1e;
-    margin-left: 20px;
-    white-space: nowrap;
-    margin: 0;
-    cursor: pointer;
-    transition: transform .2s;
-    transform: scale(1.5);
+    background-color: #083925;
+    color:white;
 }
-
-.barNav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Redes sociales */
-.redes {
-    display: flex;
-    align-items: center;
-}
-
-.log {
-    margin: 0 10px;
-    width: 36px;
-    height: 36px;
-}
-
-/* Imagen de fondo */
-#inicio {
-    position: relative;
-    text-align: center;
-}
-
-.imgback {
-    width: 100%;
-}
-
-/* Contenido principal */
-.principal {
-    padding: 20px;
-}
-
-/* Servicios */
-#servicios h1 {
-    text-align: center;
-}
-
-.service-card {
-    border: 1px solid #ccc;
-    margin: 20px 0;
-    padding: 20px;
-}
-
-/* Reserva */
-#reserva {
-    text-align: center;
-}
-
-#btn-abrir-modal {
-    background-color: #333;
-    /* Cambia el color del botón según tu preferencia */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Formulario de reserva */
-#modal::backdrop{
-    background-color: rgba(0,0,0,.55);
-}
-#modal{
-    /* Estilos del modal */
-    max-width: 150ch;
-}
-    
-
-
-/* Separador */
-.separator {
-    width: 100%;
-    height: 2px;
-    
-}
-
-/* Contacto */
-#contact h1 {
-    text-align: center;
-    align-items: center;
-    align-items: center;
-}
-
-/* Ubicación */
-#ubication h2 {
-    text-align: center;
-}
-
-#ubication h3 {
-    text-align: center;
-}
-
-.mapa{
-    width: 50%;
-    height: 450px;
-}
-
-.bottompage{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #295f4e, #6db193, #64a36f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #295f4e, #6db193, #64a36f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.back-sbn{
-    width: 100%;
-    height:400px;
-    color:#000000
-}
-
-.text-sbn{
-    margin: 0 160px;
-}
-
-/* Sobre nosotros */
-#sbn {
-    text-align: center;
-}
-
-/* Footer */
-.site-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .barNav {
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .redes {
-        margin-top: 10px;
-        text-align: center;
-    }
-}
-
-.popup .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height: 220px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.popup .close-btn {
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup .active .overlay {
-    display: block;
-}
-
-.popup .active .content {
-    transition: all ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.log{
-    width: 36px;
-    height: 36px;
-}
-
-.principal{
-    margin: 0 100px;
-}
-
-.redlogo{
-    padding:14px;
-}
-
-.redes{
-    margin-left:40px;
-    display:flex;
-    justify-content: flex-end;
-}
-
-
 
 .redes{
     display:flex;
@@ -297,11 +56,11 @@ nav a{
 
 .site-footer{
     margin-top: 3%;
-    background-color: #ffe121;
+    background-color: #2a2a2a;
 }
 
 #footer-content{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 
 .footer-text{
@@ -314,98 +73,51 @@ nav a{
 }
 
 .imgback{
+    margin-top:50px;
     height:auto;
 }
 
 .img-fluid{
-    height: 450px;
+    height: 600px;
     width:100%;
 }
 
 
-#servicios, #contact, #ubication{
+.card{
+    margin: 12px 45px;
+    
+}
+
+.card-img-top{
+    height: 500px;
+}
+
+#contact{
     text-align: center;
 }
 
-.separator{
-    display: flex;
+#ubication{
     text-align: center;
-    width:100%;
-    
-    height:100px;
 }
 
-
-
-/* Carrousel */
-.carrousel{
-    width: 90%;
-    max-width: 120em;
-    background-color: rgb(108, 184, 105);
-    
+#cartaM{
+display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carrousel .grande{
-    width:200%;
-    background-color: rgb(188, 219, 187);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em;
-
-    transition: all .5s ease;
-    transform: translateX(-50%);
+#cartaS{
+  
 }
 
-.carrousel .img{
-    width: calc(100% / 4 - 2em);
-    min-height: 10vh;
-background-color: lime;
-}
-
-.carrousel .puntos{
-    width: 100%;
-    margin: 1em 1em 0;
-    padding: 1em;
-    display: flex;
-    background-color: rgb(255, 0, 0);
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrousel .punto{
-    width: 2em;
-    padding:.4em;
-    height: 2em;
-    margin: 1em 1em 0;
-    background-color: blue;
-}
-
-.carrousel .punto.activo{
-    background-color: orange;
-    
-}
-/* MODAL */
-#modal::backdrop{
-    background-color: rgba(0,0,0,.55);
-}
-#modal{
-    max-width: 150ch;
-}
 
 @media(max-width:1100px){
     
     nav{
         flex-direction: column;
-        gap:10px;
     }
     nav a{
-        justify-content: space-between;
-    }
-    .nav-link{
-        width: 100%;
+        margin:3%;
     }
     .logo{
         width: 40%;
@@ -419,7 +131,7 @@ background-color: lime;
     }
     
     #redes{
-        justify-content: space-between;
+        padding:2%;
     }
 
 }
@@ -472,5 +184,33 @@ background-color: lime;
 .popup .active .content {
     transition: all ease-in-out;
     transform:translate(-50%,-50%) scale(1);
-
 }
+
+.contacto
+  
+  p > label {
+    display: block;
+  }
+  
+  input:required[type="nombre" ],
+  input:required[type="apellido"],
+  input:required[type="email"],
+  input:required[type="telefono"],
+  input:required[type="asunto"],
+  input:required[type="text"],
+
+  textarea,
+  fieldset {
+    border: 1px solid #08da2b; background-color: #85a07a;
+    box-sizing: border-box;
+  }
+  
+  input:invalid {
+    box-shadow: 0 0 5px 1px red; background-color: rgb(250, 195, 195);
+
+  }
+  
+  input:focus:invalid {
+    box-shadow: none;
+  }
+  
