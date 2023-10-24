@@ -29,6 +29,12 @@ header {
     max-block-size: 300px;
 }
 
+main{
+    color: #fbfae1;
+    background: -webkit-linear-gradient(to bottom, #295f4e, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #295f4e, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 nav{
     display:flex;
     width:100%; 
@@ -135,10 +141,15 @@ nav a{
 }
 
 /* Formulario de reserva */
-#modal {
-    display: none;
-    /* Estilos del modal */
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
 }
+#modal{
+    /* Estilos del modal */
+    max-width: 150ch;
+}
+    
+
 
 /* Separador */
 .separator {
@@ -174,11 +185,14 @@ nav a{
     background: linear-gradient(to bottom, #295f4e, #6db193, #64a36f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#sbn{
-    color: #fbfae1;
-    background: -webkit-linear-gradient(to bottom, #295f4e, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #295f4e, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.back-sbn{
+    width: 100%;
+    height:400px;
+    color:#000000
+}
 
+.text-sbn{
+    margin: 0 160px;
 }
 
 /* Sobre nosotros */
