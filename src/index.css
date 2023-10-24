@@ -163,22 +163,26 @@ nav a{
     text-align: center;
     align-items: center;
     align-items: center;
-    label {
+    
+        label {
             display: block;
         }
-        input:required[type="text" ],
-        fieldset {
-            border: 1px solid #08da2b;
-            background-color: #85a07a;
-            box-sizing: border-box;
-        }
-            input:invalid {
-            box-shadow: 0 0 5px 1px red;
-            background-color: rgb(250, 195, 195);
-            }
     
-        input:focus:invalid {
-            box-shadow: none;
+        input:required[type="name"],
+        input:required[type="email"],
+        input:required[type="tel"],
+        input:required[type="text"],
+    
+        input:invalid {
+            border: 2px dashed red;
+        }
+    
+        input:invalid:required {
+            background-image: linear-gradient(lightgreen);
+        }
+    
+        input:valid {
+            border: 2px solid black;
         }
 }
 
