@@ -202,11 +202,18 @@
 
           <p>
             <textarea name="Mensaje" rows="4" cols="40" placeholder="Su Mensaje" required></textarea>
+          <div>
+            <p>{{Mensaje}}</p>
+          <p v-text="mensaje"></p>
+        </div>
           </p>
+         
           <p>
             <input type="submit" value="Enviar" />
           </p>
         </form>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="validacion.js"></script>
       </section>
     
       <img class="separator" src="pngegg.png" alt="">
