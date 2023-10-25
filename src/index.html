@@ -188,23 +188,23 @@
         <h1>
           CONTACTO
         </h1>
-        <form>
+        <form id="contacto">
           <p>
-            <input type="text" name="nombre" placeholder="Nombre" size="40" />
-            <input type="text" name="apellido" placeholder="Apellido" size="40" />
+            <input type="text" name="nombre" placeholder="Nombre" size="40"  required/>
+            <input type="text" name="apellido" placeholder="Apellido" size="40"  required/>
           </p>
 
           <p>
-            <input type="text" name="Email" placeholder="Email" size="40" />
-            <input type="text" name="telefono" placeholder="Telefono" size="40" />
+            <input type="email" name="Email" placeholder="Email" size="40"  required/>
+            <input type="tel" name="telefono" placeholder="Telefono" size="40" />
           </p>
 
           <p>
-            <input type="text" name="texto" placeholder="Asunto" size="40" />
+            <input type="text" name="texto" placeholder="Asunto" size="40"  required/>
           </p>
 
           <p>
-            <textarea name="Mensaje" rows="4" cols="40" placeholder="Su Mensaje"></textarea>
+            <textarea name="Mensaje" rows="4" cols="40" placeholder="Su Mensaje" required></textarea>
           </p>
           <p>
             <input type="submit" id="#btn-enviar-form" value="Enviar" />
