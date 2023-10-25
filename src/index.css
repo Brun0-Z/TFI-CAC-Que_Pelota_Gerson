@@ -79,8 +79,12 @@ li:hover{
     cursor: pointer;
 }
 
+#btn-cerrar-menu{
+
+    display:none;
+}
+
 #btn-abrir-menu{
-    height: 70%;
     display: none;
 }
 
@@ -174,6 +178,7 @@ li:hover{
 .img-fluid{
     height: 30rem;
     width:100%;
+    margin-top:.5rem;
 }
 
 #servicios, #contact, #ubication{
@@ -293,12 +298,22 @@ background-color: lime;
 
 @media screen and (max-width: 1300px) {
 
+    #btn-abrir-menu img{
+        width:2rem;
+    }
 
-    #btn-abrir-menu{
+    #btn-cerrar-menu img{
+        width:2rem;
+    }
+
+    #btn-abrir-menu, #btn-cerrar-menu{
         display: block;
+        background-color: rgba(0,0,0,0);
+        border:0;
     }
 
     .png-logo{
+        height:3rem;
         width:8rem;
     }
 
@@ -309,24 +324,56 @@ background-color: lime;
     .img-fluid{
       height: 20rem;
       width:100%;
-    }
-    
-    header{
-        background: rgb(var(--grismedio),var(--grismedio),var(--grismedio),.9); /* Fondo blanco con 50% de transparencia */
-        box-shadow: 0 0 0 100vmax  rgba(0,0,0,.5);
+      margin-top:3rem;
     }
 
-    
-      .redes {    
-        scale:.5;
-        align-items: end;
-      }
-    
-      .nav-container {
+    .separador img {
+        width: 40vh;
+        margin: 1rem;
+    }
+
+    .navbar{
+        transform:translateX(100%);
+        transition:.1s;
+        opacity: 0;
+        visibility: hidden;
         display: flex;
         flex-direction: column;
         align-items: end;
-      }
+        position:absolute;
+        gap:1rem;
+        top:0;
+        right:0;
+        background-color: var(--verdeoscuro);
+        padding: .5rem;
+    }
+    
+    .navbar.visible{
+        transform: translateX(0%);
+        transition:.2s;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.8);
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    .nav-list li a{
+        margin:0;
+    }
+    
+    .redes {    
+        scale:.8;
+    }
+    
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 
     .nav-link{
         scale:.75;
@@ -334,6 +381,11 @@ background-color: lime;
     .nav-link:hover{
         transition: transform .2s;
         transform:scale(1.15);
+    }
+
+    .mapa{
+        width:25rem;
+        height:25rem;
     }
     
 }
