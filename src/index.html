@@ -20,32 +20,30 @@
     <header>
       <div class="logo">
         <a href="#" rel="noopener noreferrer">
-          <img
-            class="png-logo"
-            src="QPG.png"
-            alt="logo futbol 5"
-          />
+          <img class="png-logo" src="QPG.png" alt="logo futbol 5"/>
         </a>
       </div>
-      <nav class="barNav navbar navbar-fixed-top">
-        <a href="#" class="nav-link text-uppercase fw-bold">el complejo</a>
-        <a href="#servicios" class="nav-link text-uppercase fw-bold">servicios</a>
-        <a href="#reserva" class="nav-link text-uppercase fw-bold">reserva</a>
-        <a href="#contact" class="nav-link text-uppercase fw-bold">contacto</a>
-        <a href="#sbn" class="nav-link text-uppercase fw-bold">nosotros</a>
+      <button id="btn-abrir-menu">Abrir</button>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#">el complejo</a></li>
+          <li><a href="#servicios">servicios</a></li>
+          <li><a href="#reserva">reserva</a></li>
+          <li><a href="#contact">contacto</a></li>
+          <li><a href="#sbn">nosotros</a></li>
+        </ul>
+        <div class="redes">
+          <a class="redlogo" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+            <img id="log" src="whatsapp.svg"/>
+          </a>
+          <a class="redlogo" href="https://www.instagram.com/" target="_blank">
+            <img id="log" src="instagram.svg" />
+          </a>
+          <a class="redlogo" href="https://www.facebook.com/?ref=logo" target="_blank">
+            <img id="log" src="facebook.svg"/>
+          </a>
+        </div>
       </nav>
-      <div class="redes">
-        <a class="redlogo" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-          <img class="log" src="whatsapp.png"/>
-        </a>
-        <a class="redlogo" href="https://www.instagram.com/" target="_blank">
-          <img class="log" src="instagram.png" />
-        </a>
-        <a class="redlogo" href="https://www.facebook.com/?ref=logo" target="_blank">
-          <img class="log" src="facebook.png"/>
-        </a>
-        
-      </div>
     </header>
     <section id="inicio">
       <div class="imgback">
@@ -56,9 +54,9 @@
         />
       </div>
     </section>
-    <section class="bottompage">
+    
     <main>
-      <section class="principal">
+      
       <section class="titulos">
         <h3 class="display-4 fw-bold">
           ¿Buscas un lugar para jugar fútbol 5 o 7 con tus amigos?
@@ -69,8 +67,9 @@
           digna de disfrute para vos y tus compañeros.
         </h5>
       </section>
-
-      <img class="separator" src="pngegg.png" alt="">
+      <div class="separador">
+        <img class="separator" src="pngegg.png" alt="">
+      </div>
       <section id="servicios">
         <h1>Servicios</h1>
         <table>
@@ -87,7 +86,7 @@
             </tr>
             <tr>
               <td>
-                <h3>Kiosko/Bar</h3>
+                <h3>Kiosco/Bar</h3>
               </td>
               <td>
                 <p>En nuestro kiosco/bar podrás encontrar variedad de bebidas, snacks surtidos y un servicio de bar
@@ -103,7 +102,7 @@
               </td>
               <td>
                 <p>Nuestro estacionamiento cerrado e iluminado cuenta con cámaras de seguridad te brinda la tranquilidad
-                  para que jueges sin pensar qué le pueda pasar a tu vehículo</p>
+                  para que juegues sin pensar qué le pueda pasar a tu vehículo</p>
               </td>
             </tr>
             <tr>
@@ -115,12 +114,15 @@
           </tbody>
         </table>
       </section>
-      <img class="separator" src="pngegg.png" alt="">
+      <div class="separador">
+        <img class="separator" src="pngegg.png" alt="">
+      </div>
+      
       <section id="reserva">
         <h1>RESERVA</h1>
         <h3> Reservá con nosotros en las mejores canchas para disfrutar con tus amigos.</h3>
         <h5> Elegí entre nuestras canchas de fútbol 5 o 7 y hace tu reserva.</h5>
-        <button id="btn-abrir-modal">Hace tu reserva!</button>
+        <button id="btn-abrir-modal">hace tu reserva!</button>
 
         <dialog id="modal">
           <div class="seccion" id="seccion1">
@@ -176,11 +178,12 @@
             </form>
             <button id="btn-cerrar-modal">Cerrar Ventana</button>
         </dialog>
-      </section>
     </section>
 
-
-    <img class="separator" src="pngegg.png" alt="">
+    <div class="separador">
+      <img class="separator" src="pngegg.png" alt="">
+    </div>
+    
       <section id="contact" align="center">
         <h1>
           CONTACTO
@@ -204,12 +207,15 @@
             <textarea name="Mensaje" rows="4" cols="40" placeholder="Su Mensaje"></textarea>
           </p>
           <p>
-            <input type="submit" value="Enviar" />
+            <input type="submit" id="#btn-enviar-form" value="Enviar" />
           </p>
         </form>
       </section>
-    
-      <img class="separator" src="pngegg.png" alt="">
+      
+      <div class="separador">
+        <img class="separator" src="pngegg.png" alt="">
+      </div>
+      
 
       <section id="ubication">
         <h2>NUESTRA UBICACION</h2>
@@ -237,7 +243,6 @@
         año de proyección y planificación, nuestro proyecto por fin vió la luz y en 2021 abrimos
       </p>
       </div>
-    </section>
   </main>
 
   <footer class="site-footer">

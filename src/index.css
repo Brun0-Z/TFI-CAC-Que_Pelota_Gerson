@@ -1,3 +1,23 @@
+:root{
+    --azul:#1c2eb9;
+    --amarillo:#ffe121;
+    --grisclaro:#8a8a8a;
+    --grismedio:#3c3c3c;
+    --grisoscuro:#1a1a1a;
+    --verdeoscuro:#19352a;
+    --verdemedio:#1d5529;
+    --verdeclaro:#0ca14f;
+    --turquesaclaro:#295f4e;
+    --turquesamedio:#38817a;
+    --turquesaoscuro: #253c3a;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 
 /* Estilos generales */
 body {
@@ -7,10 +27,8 @@ body {
     color: rgb(179, 179, 179);
     background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #8a8a8a, #3c3c3c, #1a1a1a);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, var(--turquesaclaro),var(--turquesamedio) , var(--turquesaoscuro));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, var(--turquesaclaro),var(--turquesamedio) , var(--turquesaoscuro)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Header */
@@ -20,36 +38,56 @@ header {
     left:0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    display: flex;
-    background: linear-gradient(to right, #19352a, #1d5529, #0ca14f);
+    background: linear-gradient(to right, var(--verdeoscuro),var(--verdemedio) ,var(--verdeclaro) );
     z-index: 100;
-    max-block-size: 300px;
 }
 
 main{
     color: #fbfae1;
-    background: -webkit-linear-gradient(to bottom, #295f4e, #38817a, #295f4e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #295f4e, #38817a, #295f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, var(--turquesaclaro),var(--turquesamedio) , var(--turquesaoscuro));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, var(--turquesaclaro),var(--turquesamedio) , var(--turquesaoscuro)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-nav{
+.nav-list{
     display:flex;
-    width:100%; 
+    flex-direction: row;
+    list-style-type: none;
+    justify-content:space-between;
+    gap:1rem;
 }
 
-nav a{
-    text-align: center;
-    justify-content:space-evenly;
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .7rem;
+    margin: 2rem;
+}
+
+li:hover{
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+
+.nav-list li a:hover{
+    background-color: var(--amarillo);
+    color:var(--azul);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#btn-abrir-menu{
+    height: 70%;
+    display: none;
 }
 
 .png-logo{
-    max-width: 200px;
+    max-width:20rem;
+    width:15rem;
     height:auto;
-    margin-right: 50px;
-    z-index: 100;
 }
 
 .redes   {
@@ -57,48 +95,11 @@ nav a{
 }
 
 .logo {
-    flex: 1;
     text-align: center;
+    height:auto;
 }
 
-.barNav {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.nav-link{
-    color:rgb(208, 208, 208);
-}
-
-.nav-link:hover{
-    background-color: #ffe121;
-    color:#7cbd1e;
-    margin-left: 20px;
-    white-space: nowrap;
-    margin: 0;
-    cursor: pointer;
-    transition: transform .2s;
-    transform: scale(1.5);
-}
-
-.barNav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Redes sociales */
-.redes {
-    display: flex;
-    align-items: center;
-}
-
-.log {
-    margin: 0 10px;
-    width: 36px;
-    height: 36px;
-}
 
 /* Imagen de fondo */
 #inicio {
@@ -110,194 +111,47 @@ nav a{
     width: 100%;
 }
 
-/* Contenido principal */
-.principal {
-    padding: 20px;
-}
-
-/* Servicios */
-#servicios h1 {
-    text-align: center;
-}
-
-.service-card {
-    border: 1px solid #ccc;
-    margin: 20px 0;
-    padding: 20px;
-}
-
 /* Reserva */
 #reserva {
     text-align: center;
 }
 
 #btn-abrir-modal {
-    background-color: #333;
-    /* Cambia el color del botón según tu preferencia */
-    color: white;
+    margin-top: 5vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--verdeoscuro);
+    color: rgb(222, 219, 31);
     padding: 10px 20px;
-    border: none;
+    border:none;
     cursor: pointer;
 }
 
-/* Formulario de reserva */
-#modal::backdrop{
-    background-color: rgba(0,0,0,.55);
-}
-#modal{
-    /* Estilos del modal */
-    max-width: 150ch;
-}
-    
-
-
-/* Separador */
-.separator {
-    width: 100%;
-    height: 2px;
-    
+#btn-abrir-modal:hover {
+    animation: escalaEnBucle 2.25s infinite;
 }
 
-/* Contacto */
-#contact h1 {
-    text-align: center;
-    align-items: center;
-    align-items: center;
-}
-
-/* Ubicación */
-#ubication h2 {
-    text-align: center;
-}
-
-#ubication h3 {
-    text-align: center;
-}
-
-.mapa{
-    width: 50%;
-    height: 450px;
-}
-
-.bottompage{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #295f4e, #6db193, #64a36f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #295f4e, #6db193, #64a36f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.back-sbn{
-    width: 100%;
-    height:400px;
-    color:#000000
-}
-
-.text-sbn{
-    margin: 0 160px;
-}
-
-/* Sobre nosotros */
-#sbn {
-    text-align: center;
-}
-
-/* Footer */
-.site-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+@keyframes escalaEnBucle {
+    0%, 100% {
+        transform: scale(1);
     }
-
-    .barNav {
-        margin-top: 10px;
-        text-align: center;
+    50% {
+        transform: scale(1.25);
     }
-
-    .redes {
-        margin-top: 10px;
-        text-align: center;
-    }
-}
-
-.popup .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height: 220px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.popup .close-btn {
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup .active .overlay {
-    display: block;
-}
-
-.popup .active .content {
-    transition: all ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.log{
-    width: 36px;
-    height: 36px;
-}
-
-.principal{
-    margin: 0 100px;
-}
-
-.redlogo{
-    padding:14px;
 }
 
 .redes{
-    margin-left:40px;
     display:flex;
     justify-content: flex-end;
-}
-
-
-
-.redes{
-    display:flex;
     flex-direction: row;
 }
 
 .titulos{
-    margin:1%;
     text-align:center;
 }
 
 .site-footer{
-    margin-top: 3%;
-    background-color: #ffe121;
+    background-color: var(--amarillo);
 }
 
 #footer-content{
@@ -318,24 +172,21 @@ nav a{
 }
 
 .img-fluid{
-    height: 450px;
+    height: 30rem;
     width:100%;
 }
-
 
 #servicios, #contact, #ubication{
     text-align: center;
 }
 
-.separator{
-    display: flex;
+.separador{
     text-align: center;
-    width:100%;
-    
-    height:100px;
 }
-
-
+.separator{
+    width:80rem;
+    height:5rem;
+}
 
 /* Carrousel */
 .carrousel{
@@ -353,7 +204,6 @@ nav a{
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-
     transition: all .5s ease;
     transform: translateX(-50%);
 }
@@ -395,82 +245,97 @@ background-color: lime;
     max-width: 150ch;
 }
 
-@media(max-width:1100px){
+
+
+/* Contacto */
+#contact h1 {
+    text-align: center;
+    align-items: center;
+    align-items: center;
+}
+
+/* Ubicación */
+#ubication h2 {
+    text-align: center;
+}
+
+#ubication h3 {
+    text-align: center;
+}
+
+.mapa{
+    width: 50%;
+    height: 450px;
+}
+
+.back-sbn{
+    width: 100%;
+    height:400px;
+    color:#000000
+}
+
+.text-sbn{
+    margin: 0 160px;
+}
+
+/* Sobre nosotros */
+#sbn {
+    text-align: center;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+   
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    #btn-abrir-menu{
+        display: block;
+    }
+
+    .png-logo{
+        width:8rem;
+    }
+
+    #inicio{
+        margin-top:0;
+    }
+
+    .img-fluid{
+      height: 20rem;
+      width:100%;
+    }
     
-    nav{
+    header{
+        background: rgb(var(--grismedio),var(--grismedio),var(--grismedio),.9); /* Fondo blanco con 50% de transparencia */
+        box-shadow: 0 0 0 100vmax  rgba(0,0,0,.5);
+    }
+
+    
+      .redes {    
+        scale:.5;
+        align-items: end;
+      }
+    
+      .nav-container {
+        display: flex;
         flex-direction: column;
-        gap:10px;
-    }
-    nav a{
-        justify-content: space-between;
-    }
+        align-items: end;
+      }
+
     .nav-link{
-        width: 100%;
+        scale:.75;
     }
-    .logo{
-        width: 40%;
-    }
-    .logo img{
-        width:100%;
-    }
-    .barNav{
-        text-align: center;
-        width: 70%;
+    .nav-link:hover{
+        transition: transform .2s;
+        transform:scale(1.15);
     }
     
-    #redes{
-        justify-content: space-between;
-    }
-
 }
 
-.popup .overlay {
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100vw;
-    height:100vh;
-    background: rgba(0,0,0,7);
-    z-index:1;
-    display: none;
-}
 
-.popup .content {
-    position:absolute;
-    top: 50%;
-    left:50%;
-    transform:translate(-50%,-50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height:220px;
-    z-index:2;
-    text-align:center;
-    padding:20px;
-    box-sizing:border-box;
-}
-
-.popup .close-btn {
-    cursor:pointer;
-    position:absolute;
-    right:20px;
-    top:20px;
-    width:30px;
-    height:30px;
-    background:#222;
-    color: #fff;
-    font-size:25px;
-    font-weight:600;
-    line-height:30px;
-    text-align:center;
-    border-radius:50%;
-}
-
-.popup .active .overlay {
-    display:block;
-}
-
-.popup .active .content {
-    transition: all ease-in-out;
-    transform:translate(-50%,-50%) scale(1);
-
-}
