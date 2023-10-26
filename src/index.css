@@ -90,7 +90,6 @@ li:hover{
 }
 
 #btn-cerrar-menu{
-
     display:none;
 }
 
@@ -184,6 +183,7 @@ li:hover{
 }
 
 #btn-cerrar-modal img{
+    filter: invert(100%);
     height:1rem;
     width:auto;
     margin:.5rem;
