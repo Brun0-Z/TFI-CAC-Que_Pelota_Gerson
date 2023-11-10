@@ -93,8 +93,17 @@ li:hover{
     display:none;
 }
 
+#btn-cerrar-menu:hover{
+    cursor:pointer;
+}
+
+
 #btn-abrir-menu{
     display: none;
+}
+
+#btn-abrir-menu:hover{
+    cursor:pointer;
 }
 
 .png-logo{

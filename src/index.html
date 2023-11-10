@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+<!---
+*TODO:
+* - Solucionar deploy pos-separar archivos
+* - Organizar el TPO en carpetas img, css , js etc 
+* - Sacar el link de bootstrap 
+* - Mejorar márgenes, padding,line-heigth
+* - Los títulos no deben ser iguales que la letra de párrafos 
+* - Ordenar secciones nosotros,servicios,canchas ,contacto y ubicación.
+* - redes sociales ubicarlas en otro lugar para que no quede sobrecargado el menú
+* - En el titulo el fondo negro complejo de futbol  5 y 7 achicar un poco la letra y sacar el fondo negro porque se pierde le texto 
+
+-->
+
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
   <link rel="stylesheet" href=".\index.css" />
-  <link rel="icon" href="logoPag.png" type="image/x-icon" />
+  <link rel="icon" href="img/logoPag.png" type="image/x-icon" />
   <title>Que pelota Gerson</title>
 </head>
 
@@ -13,15 +33,15 @@
     <header>
       <div class="logo">
         <a href="#" rel="noopener noreferrer">
-          <img class="png-logo" src="QPG.png" alt="logo futbol 5"/>
+          <img class="png-logo" src="img/QPG.png" alt="logo futbol 5"/>
         </a>
       </div>
       <button id="btn-abrir-menu">
-        <img src="menu.svg" alt="barra-menu">
+        <img src="svg/menu.svg" alt="barra-menu">
       </button>
       <nav class="navbar" id="navbar">
         <button id="btn-cerrar-menu">
-          <img src="closemenu.svg" alt="cerrar-menu">
+          <img src="svg/closemenu.svg" alt="cerrar-menu">
         </button>
         <ul class="nav-list">
           <li><a href="#">el complejo</a></li>
@@ -32,20 +52,20 @@
         </ul>
         <div class="redes">
           <a class="redlogo" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-            <img id="log" src="whatsapp.svg"/>
+            <img id="log" src="svg/whatsapp.svg"/>
           </a>
           <a class="redlogo" href="https://www.instagram.com/" target="_blank">
-            <img id="log" src="instagram.svg" />
+            <img id="log" src="svg/instagram.svg" />
           </a>
           <a class="redlogo" href="https://www.facebook.com/?ref=logo" target="_blank">
-            <img id="log" src="facebook.svg"/>
+            <img id="log" src="svg/facebook.svg"/>
           </a>
         </div>
       </nav>
     </header>
     <section id="inicio">
       <div class="imgback">
-        <img class="img-fluid" src="backgroundgerson.png" alt=""/>
+        <img class="img-fluid" src="img/backgroundgerson.png" alt=""/>
       </div>
     </section>
     
@@ -63,7 +83,7 @@
         </h5>
       </section>
       <div class="separador">
-        <img class="separator" src="pngegg.png" alt="">
+        <img class="separator" src="img/pngegg.png" alt="">
       </div>
       <section id="servicios">
         <h1>SERVICIOS</h1>
@@ -73,7 +93,7 @@
             <h3 class="gridtitulo">Vestuario</h3>
             <p>Cómodos y espaciosos, nuestros vestuarios cuentan con baño, duchas y lockers para su comodidad, con piso
               antideslizante para su seguridad.</p>
-            <img class="grid-img" src="vestuariomasc.jpg" alt="">
+            <img class="grid-img" src="img/vestuariomasc.jpg" alt="">
           </div>
         
           <div class="grid-item">
@@ -81,7 +101,7 @@
             <p>En nuestro kiosco/bar podrás encontrar variedad de bebidas, snacks surtidos y un servicio de bar para
               recargar tus energías antes de jugar o para sentarte con amigos a relajar o festejar después de un juego.
             </p>
-            <img class="grid-img" src="kioskobar.png" alt="">
+            <img class="grid-img" src="img/kioskobar.png" alt="">
           </div>
         
           <div class="grid-item">
@@ -89,32 +109,32 @@
             <p>Nuestro estacionamiento cerrado e iluminado cuenta con cámaras de seguridad te brinda la tranquilidad para
               que juegues sin pensar qué le pueda pasar a tu vehículo.</p>
             </p>
-            <img class="grid-img" src="estacionamiento.jpg" alt="">
+            <img class="grid-img" src="img/estacionamiento.jpg" alt="">
           </div>
         
           <div class="grid-item">
             <h3 class="gridtitulo">Iluminación de Calidad</h3>
             <p>Contamos con reflectores led de 23000 lúmenes en cada una de nuestras canchas, para que te sientas en un
               estadio de verdad jugando con tus amigos.</p>
-            <img class="grid-img" src="Proyectores-LED.jpeg" alt="">
+            <img class="grid-img" src="img/Proyectores-LED.jpeg" alt="">
           </div>
 
           <div class="grid-item">
             <h3 class="gridtitulo">Sistema de Ligas y Torneos</h3>
             <p> Ofrecemos un sistema de ligas y torneos que te permite competir con otros equipos y vivir la emoción del fútbol competitivo.</p>
-            <img class="grid-img" src="trofeos.jpg" alt="">
+            <img class="grid-img" src="img/trofeos.jpg" alt="">
           </div>
 
           <div class="grid-item">
             <h3 class="gridtitulo">Parrilla</h3>
             <p>Ofrecemos un sistema de ligas y torneos que te permite competir con otros equipos y vivir la emoción del
               fútbol competitivo.</p>
-            <img class="grid-img" src="parrilla.jpg" alt="">
+            <img class="grid-img" src="img/parrilla.jpg" alt="">
           </div>
         </div>
       </section>
       <div class="separador">
-        <img class="separator" src="pngegg.png" alt="">
+        <img class="separator" src="img/pngegg.png" alt="">
       </div>
       
       <section id="canchas">
@@ -130,22 +150,22 @@
           <div class="carrousel">
             <div class="grande">
               <div class="carta">
-                <img src="futbol5-4.jpg" alt="Imagen 1" class="img">
+                <img src="img/futbol5-4.jpg" alt="Imagen 1" class="img">
                 <h3>La cancha Maradona</h3>
                 <p>Adéntrate en la Cancha Maradona, un espacio donde la astucia y la destreza son las protagonistas. Con paredes que desafían la gravedad, esta cancha captura la esencia del legendario Diego Maradona. El juego rápido y técnico cobra vida en este terreno de juego compacto, creando oportunidades para jugadas mágicas dignas de "La Mano de Dios".</p>
               </div>
               <div class="carta">
-                <img src="futbol5-1.jpg" alt="Imagen 2" class="img">
+                <img src="img/futbol5-1.jpg" alt="Imagen 2" class="img">
                 <h3>La cancha Messi</h3>
                 <p>Descubre la magia en la Cancha Messi, donde cada partido se convierte en una danza de precisión y creatividad. Con dimensiones perfectamente adaptadas para el juego de equipo, esta cancha rinde homenaje al inigualable Lionel Messi. Siente la emoción de driblar como Messi y experimenta la pasión del juego en cada rincón de esta cancha.</p>
               </div>
               <div class="carta">
-                <img src="futbol7-2.jpg" alt="Imagen 3" class="img">
+                <img src="img/futbol7-2.jpg" alt="Imagen 3" class="img">
                 <h3>La cancha Ronaldinho</h3>
                 <p>Sumérgete en la alegría del juego en la Cancha Ronaldinho, donde cada partido es una celebración de la creatividad y el espectáculo. Con espacio adicional para despliegues de magia y movimientos impredecibles, esta cancha encarna el espíritu libre de Ronaldinho. Experimenta el fútbol como un arte y déjate llevar por la sonrisa eterna del genio brasileño.</p>
               </div>
               <div class="carta">
-                <img src="futbol5-2.jpg" alt="Imagen 4" class="img">
+                <img src="img/futbol5-2.jpg" alt="Imagen 4" class="img">
                 <h3>La cancha Riquelme</h3>
                 <p>Descubre la elegancia táctica en la Cancha Riquelme, un terreno de juego diseñado para la visión estratégica y la precisión en cada pase. Con dimensiones perfectamente ajustadas para el fútbol 5, esta cancha rinde homenaje al maestro Juan Román Riquelme. Experimenta el juego de posición y la magistral ejecución en este espacio donde cada toque cuenta.</p>
               </div>
@@ -158,7 +178,7 @@
               <li class="punto"></li>
               </ul>
               <button id="btn-cerrar-modal">
-                <img src="closemenu.svg" alt="cerrar-menu">
+                <img src="svg/closemenu.svg" alt="cerrar-menu">
               </button>
             </div>
           
@@ -167,7 +187,7 @@
       </section>
 
     <div class="separador">
-      <img class="separator" src="pngegg.png" alt="">
+      <img class="separator" src="img/pngegg.png" alt="">
     </div>
     
       <section id="contact">
@@ -198,7 +218,7 @@
       </section>
       
       <div class="separador">
-        <img class="separator" src="pngegg.png" alt="">
+        <img class="separator" src="img/pngegg.png" alt="">
       </div>
 
       <section id="ubication">
@@ -212,11 +232,11 @@
     </section>
 
     <div class="separador">
-      <img class="separator" src="pngegg.png" alt="">
+      <img class="separator" src="img/pngegg.png" alt="">
     </div>
 
   <section id="sbn">
-    <img class="back-sbn" src="depositphotos_3427494-stock-photo-artificial-grass-turf-background.jpg" alt="fondo césped">
+    <img class="back-sbn" src="img/depositphotos_3427494-stock-photo-artificial-grass-turf-background.jpg" alt="fondo césped">
     <div class="text-sbn">
     <H1>Sobre nosotros</H1>
     <p>
@@ -238,10 +258,10 @@
   </footer>
 
   <!--JavaScript -->
-  <script src="carrouselFunc.js"></script>
-  <script src="menuNav.js"></script>
-  <script src="togglePopup.js"></script>
-  <script src="validarForm.js"></script>
+  <script src="js/carrouselFunc.js"></script>
+  <script src="js/menuNav.js"></script>
+  <script src="js/togglePopup.js"></script>
+  <script src="js/validarForm.js"></script>
 </body>
 
 </html>
