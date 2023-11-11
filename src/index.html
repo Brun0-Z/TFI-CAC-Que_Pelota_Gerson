@@ -4,14 +4,8 @@
 
 
 <!---
-*TODO:
-* - Solucionar deploy pos-separar archivos
-* - Organizar el TPO en carpetas img, css , js etc 
-* - Sacar el link de bootstrap 
+*TODO: 
 * - Mejorar márgenes, padding,line-heigth
-* - Los títulos no deben ser iguales que la letra de párrafos 
-* - Ordenar secciones nosotros,servicios,canchas ,contacto y ubicación.
-* - redes sociales ubicarlas en otro lugar para que no quede sobrecargado el menú
 * - En el titulo el fondo negro complejo de futbol  5 y 7 achicar un poco la letra y sacar el fondo negro porque se pierde le texto 
 
 -->
@@ -20,11 +14,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href=".\index.css" />
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./index.css" />
   <link rel="icon" href="img/logoPag.png" type="image/x-icon" />
   <title>Que pelota Gerson</title>
 </head>
@@ -50,17 +41,7 @@
           <li><a href="#contact">contacto</a></li>
           <li><a href="#sbn">nosotros</a></li>
         </ul>
-        <div class="redes">
-          <a class="redlogo" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-            <img id="log" src="svg/whatsapp.svg"/>
-          </a>
-          <a class="redlogo" href="https://www.instagram.com/" target="_blank">
-            <img id="log" src="svg/instagram.svg" />
-          </a>
-          <a class="redlogo" href="https://www.facebook.com/?ref=logo" target="_blank">
-            <img id="log" src="svg/facebook.svg"/>
-          </a>
-        </div>
+        
       </nav>
     </header>
     <section id="inicio">
@@ -72,15 +53,30 @@
     <main>
       
       <section class="titulos">
-        <h3>
+        <h2>
           ¡Bienvenido a "Que Pelota Gerson"!
         ¿Buscás un lugar para jugar fútbol 5 o 7 con tus amigos?
-        </h3>
-        <h5>
+        </h2>
+        <p>
           En "Que pelota Gerson" contamos con unas instalaciones perfectamente
           equipadas para que vivas partidos memorables, y una experiencia
           digna de disfrute para vos y tus compañeros.
-        </h5>
+        </p>
+      </section>
+      <div class="separador">
+        <img class="separator" src="img/pngegg.png" alt="">
+      </div>
+      <section id="sbn">
+        <img class="back-sbn" src="img/depositphotos_3427494-stock-photo-artificial-grass-turf-background.jpg" alt="fondo césped">
+        <div class="text-sbn">
+        <H1>Sobre nosotros</H1>
+        <p>
+          En el corazón de la pasión por el fútbol, nace nuestro complejo "Que Pelota Gerson". Somos más que un lugar
+          para jugar; somos un espacio donde la emoción y la camaradería se encuentran en cada rincón del campo.
+          Desde nuestro comienzo, nos hemos comprometido a crear un ambiente vibrante y acogedor para los amantes del
+          fútbol. Fundado por apasionados del deporte, "Que Pelota Gerson" ha crecido para convertirse en un punto de
+          encuentro para la comunidad futbolística. </p>
+          </div>
       </section>
       <div class="separador">
         <img class="separator" src="img/pngegg.png" alt="">
@@ -215,6 +211,17 @@
         
           <input type="submit" value="Enviar">
         </form>
+        <div class="redes">
+          <a class="redlogo" href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+            <img id="log" src="svg/whatsapp.svg"/>
+          </a>
+          <a class="redlogo" href="https://www.instagram.com/" target="_blank">
+            <img id="log" src="svg/instagram.svg" />
+          </a>
+          <a class="redlogo" href="https://www.facebook.com/?ref=logo" target="_blank">
+            <img id="log" src="svg/facebook.svg"/>
+          </a>
+        </div>
       </section>
       
       <div class="separador">
@@ -230,23 +237,6 @@
         </iframe>
       </section>
     </section>
-
-    <div class="separador">
-      <img class="separator" src="img/pngegg.png" alt="">
-    </div>
-
-  <section id="sbn">
-    <img class="back-sbn" src="img/depositphotos_3427494-stock-photo-artificial-grass-turf-background.jpg" alt="fondo césped">
-    <div class="text-sbn">
-    <H1>Sobre nosotros</H1>
-    <p>
-      En el corazón de la pasión por el fútbol, nace nuestro complejo "Que Pelota Gerson". Somos más que un lugar
-      para jugar; somos un espacio donde la emoción y la camaradería se encuentran en cada rincón del campo.
-      Desde nuestro comienzo, nos hemos comprometido a crear un ambiente vibrante y acogedor para los amantes del
-      fútbol. Fundado por apasionados del deporte, "Que Pelota Gerson" ha crecido para convertirse en un punto de
-      encuentro para la comunidad futbolística. </p>
-      </div>
-  </section>
   </main>
 
   <footer class="site-footer">
